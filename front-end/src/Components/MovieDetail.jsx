@@ -12,7 +12,9 @@ const MovieDetails = () => {
 
     useEffect(() => {
         axios
-            .get(`http://localhost:9000/api/movies/${id}`)
+            .get(
+                `https://your-render-backend-url.onrender.com/api/movies/${id}`
+            )
             .then((res) => setMovie(res.data))
             .catch((err) => console.error("Error fetching movie:", err));
     }, [id]);

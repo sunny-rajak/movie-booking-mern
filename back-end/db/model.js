@@ -6,5 +6,9 @@ const movieSchema = new mongoose.Schema({
     type: String,
 });
 
-const movie = mongoose.model("movies-details", movieSchema);
-module.exports = movie;
+// const movie = mongoose.model("movies-details", movieSchema);
+const Movie =
+    mongoose.models["movies-details"] ||
+    mongoose.model("movies-details", movieSchema);
+
+module.exports = Movie;

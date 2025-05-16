@@ -1,10 +1,13 @@
 const mongoose = require("mongoose");
 const connectDB = async () => {
     try {
-        await mongoose.connect("mongodb://127.0.0.1:27017/Movies-Data");
-        console.log("Connected  to database");
+        await mongoose.connect(process.env.MONGODB_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+        console.log("Connected to database");
     } catch (error) {
-        console.log(error);
+        console.error("Database connection error:", error);
     }
 };
 

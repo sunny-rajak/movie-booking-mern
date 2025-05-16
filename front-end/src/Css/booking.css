@@ -1,0 +1,95 @@
+.booking-container {
+    padding: 20px;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.slots {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.slot-btn {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+}
+
+.slot-btn.selected {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.seat-section input {
+    padding: 5px;
+    width: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.seat-layout {
+    margin-top: 20px;
+}
+
+.seat-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.seat {
+    width: 40px;
+    height: 40px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.seat.selected {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+
+.confirm-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #f84464;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booked-tkt-msg {
+    margin-top: 20px;
+    font-size: 18px;
+    height: 100px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

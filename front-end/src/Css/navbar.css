@@ -1,0 +1,217 @@
+header {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+}
+
+header .header-sec {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 16px;
+    /* background-color: #c0ddf6; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* use space-between instead of center */
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.appLogo {
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.tkt-icon {
+    font-size: 30px;
+    color: red;
+}
+
+.nav-left-container {
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 4px 10px;
+    border: 1px solid rgb(163, 159, 159);
+    border-radius: 6px;
+    box-sizing: border-box;
+    margin-left: 20px;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.search-icon-container {
+    display: flex;
+}
+
+.search-icon-container .search-icon {
+    font-size: 30px;
+    color: gray;
+    margin-right: 8px;
+}
+
+.input-container {
+    width: 100%;
+}
+
+.search-bar input {
+    height: 30px;
+    width: 100%;
+    padding: 3px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location {
+    margin-left: 10px;
+    height: 35px;
+}
+
+.location select {
+    height: 35px;
+    border: transparent;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+.signin {
+    background-color: red;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    font-size: 28px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.nav-left-container,
+.nav-right-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* max-width: 100%; */
+}
+
+@media (max-width: 768px) {
+    header .header-sec {
+        flex-direction: column;
+        align-items: center;
+        /* padding: 10px 0; */
+        gap: 5px;
+    }
+
+    .nav-left-container,
+    .nav-right-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .nav-left,
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+        padding: 8px 12px;
+    }
+
+    .nav-left {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .appLogo {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .tkt-icon {
+        font-size: 28px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .location {
+        border: 1px solid rgb(163, 159, 159);
+        border-radius: 6px;
+    }
+
+    .location select {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .signin {
+        width: auto;
+        margin: 0;
+        padding: 7px 20px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .appLogo {
+        font-size: 20px;
+    }
+
+    .search-bar .search-icon {
+        font-size: 20px;
+    }
+
+    .search-bar input {
+        font-size: 14px;
+    }
+}

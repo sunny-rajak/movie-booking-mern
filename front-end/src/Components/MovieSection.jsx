@@ -17,7 +17,7 @@ const MovieSection = () => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:9000/api/movies")
+            .get("https://movie-booking-mern-backend.onrender.com/api/movies")
             .then((res) => {
                 console.log("Fetched movies:", res.data);
                 setMovies(res.data);

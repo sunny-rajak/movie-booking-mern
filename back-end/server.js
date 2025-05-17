@@ -5,7 +5,7 @@ const movieRoutes = require("./routes/movieRoutes");
 require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 9000;
+const port = 9000;
 
 // Middleware for parsing JSON
 app.use(express.json());

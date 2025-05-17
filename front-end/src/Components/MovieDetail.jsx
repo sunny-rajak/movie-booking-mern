@@ -12,9 +12,7 @@ const MovieDetails = () => {
 
     useEffect(() => {
         axios
-            .get(
-                `https://movie-booking-mern-dip4.onrender.com/api/movies/${id}`
-            )
+            .get(`http://localhost:9000/api/movies/${id}`)
             .then((res) => setMovie(res.data))
             .catch((err) => console.error("Error fetching movie:", err));
     }, [id]);
